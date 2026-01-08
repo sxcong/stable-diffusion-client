@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileListDlg</class>
+ <widget class="QDialog" name="FileListDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PlayList</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+background: rgb(21, 21, 21,255);
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QLabel
+{
+color:white;
+font-size:12pt;
+font-family:&quot;Microsoft YaHei&quot;;
+}
+
+QComboBox
+{
+background:rgb(0,0,0);
+border:1px solid black;
+color:white;
+padding-right:10px;
+}
+
+QTabWidget
+{
+background: rgb(21,21,21);
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QSpinBox
+{
+background:rgb(0,0,0);
+border:1px solid black;
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QDoubleSpinBox
+{
+background:rgb(0,0,0);
+border:1px solid black;
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QLineEdit:enabled
+{
+background:rgb(0,0,0);
+border:1px solid black;
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QLineEdit:!enabled
+{
+background:gray;
+border:1px solid black;
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QGroupBox
+{
+border:1px solid rgb(200,200,200,100);
+border-radius:5px;
+margin-top:20px;
+font-family:&quot;Tahoma&quot;;
+font:normal 11pt; 
+} 
+QGroupBox::title
+{
+subcontrol-origin:margin;
+subcontrol-position:top left;
+padding:0 5px;
+}
+
+QTableWidget
+{
+background:rgb(21,21,21);
+border:none;
+color:white;
+margin-left:0px;
+padding-left:0px;
+padding-right:0px;
+selection-background-color: rgb(0,150,220);
+selection-color: white;
+font-size:12pt;
+font-family:&quot;Tahoma&quot;;
+}
+
+QTableWidget QHeaderView::section
+{
+background:rgb(51,51,51);
+border:1px solid rgb(39,89,158);
+color:white;
+margin-left:0px;
+padding-left:0px;
+font-size:12pt;
+font-family:&quot;Tahoma&quot;;
+}
+
+QTabBar::tab:selected {color: red;} 
+QTabBar::tab:!selected {color: white;}QTabBar::tab:hover{color: rgb(36,197,219);}
+
+QPushButton
+{
+	background:rgb(56, 132, 230);
+	color:white;
+	border:none;
+	border-radius:5px;
+}
+QPushButton:hover
+{
+	background:rgb(56, 132, 230);
+	color:rgb(10, 40, 70);
+	border:none;
+	border-radius:5px;
+	
+}
+QPushButton:pressed
+{
+	background:qradialgradient(spread:pad,cx:0.5,cy:0.5,radius:0.5,fx:0.5, fy:0.5, stop:0 rgb(10, 40, 70),stop:1 rgb(56, 132, 230));
+	color:white;
+	border:none;
+	border-radius:5px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget QHeaderView::section
+{
+background:rgb(44,44,44);
+border:1px solid rgb(40,150,229);
+color:white;
+margin-left:0px;
+padding-left:0px;
+font-family: 微软雅黑;
+font-size: 16px;
+font-weight: normal;
+}
+
+QTableWidget
+{
+position: absolute;
+left: 0px;
+top: 327px;
+width: 1543px;
+height: 327px;
+opacity: 1;
+
+background: rgb(21,21,21);
+font-family:  微软雅黑;
+font-size: 14px;
+font-weight: normal;
+color:white;
+
+box-sizing: border-box;
+border: 1px solid rgba(51, 51, 51, 1);
+}
+QTableWidget::item:selected {
+            background-color: rgb(41,4,4);
+    }
+
+QToolTip{
+border:10px;
+color: white;
+font: 12pt ;
+text - decoration: underline;
+background - color:#182031;
+}</string>
+     </property>
+     <property name="columnCount">
+      <number>4</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>fileName</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>type</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>size</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

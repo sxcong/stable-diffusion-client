@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondaryDlg</class>
+ <widget class="QDialog" name="SecondaryDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1715</width>
+    <height>902</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>历史数据</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #242E4A;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(34, 100, 155);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>22</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>22</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
+font-size: 18px;
+font-weight: normal;
+color: #FFFFFF;</string>
+        </property>
+        <property name="text">
+         <string>Stable Diffusion Client</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>925</width>
+          <height>19</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tBtn_Close">
+        <property name="minimumSize">
+         <size>
+          <width>14</width>
+          <height>14</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>14</width>
+          <height>14</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../res.qrc">
+          <normaloff>:/res/images/secbtn_close.png</normaloff>:/res/images/secbtn_close.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>14</width>
+          <height>14</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout"/>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>480</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>36</red>
+             <green>46</green>
+             <blue>74</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>100</y>
+          <width>194</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 97px;
+height: 32px;
+padding: 0px;
+border-radius: 4px;
+background: rgba(29, 163, 238, 0.5);
+border: 1px solid #1DA3EE;
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Select safetensors File</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>461</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget
+{
+background: rgb(21, 46, 84,255);
+color:white;
+font:12pt &quot;Tahoma&quot;;
+}
+
+QComboBox
+{
+background:rgb(6,82,108);
+border:1px solid black;
+color:white;
+padding-right:10px;
+}
+
+QTabWidget
+{
+background: rgb(21, 46, 84,255);
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QSpinBox
+{
+background:rgb(6,82,108);
+border:1px solid black;
+color:white;
+font:12pt &quot;Tahoma&quot;;
+}
+
+QLineEdit
+{
+background:rgb(6,82,108);
+border:1px solid black;
+color:white;
+font:11pt &quot;Tahoma&quot;;
+}
+
+QGroupBox
+{
+border:1px solid rgb(200,200,200,100);
+border-radius:5px;
+margin-top:20px;
+font-family:&quot;Tahoma&quot;;
+font:normal 11pt; 
+}
+
+QGroupBox::title
+{
+subcontrol-origin:margin;
+subcontrol-position:top left;
+padding:0 5px;
+}
+
+QTableWidget
+{
+background:rgb(35,58,93);
+border:none;
+color:white;
+margin-left:0px;
+padding-left:0px;
+padding-right:0px;
+selection-background-color: rgb(0,150,220);
+selection-color: white;
+font-size:12pt;
+font-family:&quot;Tahoma&quot;;
+}
+
+QTableWidget QHeaderView::section
+{
+background:rgb(24,78,151);
+border:1px solid rgb(39,89,158);
+color:white;
+margin-left:0px;
+padding-left:0px;
+font-size:12pt;
+font-family:&quot;Tahoma&quot;;
+}
+
+QTabBar::tab:selected {color: red;} 
+QTabBar::tab:!selected {color: white;}QTabBar::tab:hover{color: rgb(36,197,219);}
+
+QPushButton
+{
+	background:rgb(56, 132, 230);
+	color:white;
+	border:none;
+	border-radius:5px;
+}
+QPushButton:hover
+{
+	background:rgb(56, 132, 230);
+	color:rgb(10, 40, 70);
+	border:none;
+	border-radius:5px;
+	
+}
+QPushButton:pressed
+{
+	background:qradialgradient(spread:pad,cx:0.5,cy:0.5,radius:0.5,fx:0.5, fy:0.5, stop:0 rgb(10, 40, 70),stop:1 rgb(56, 132, 230));
+	color:white;
+	border:none;
+	border-radius:5px;
+}</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>File Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>File Size</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>620</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 97px;
+height: 32px;
+padding: 0px;
+border-radius: 4px;
+background: rgba(29, 163, 238, 0.5);
+border: 1px solid #1DA3EE;
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Prompt:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>620</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 97px;
+height: 32px;
+padding: 0px;
+border-radius: 4px;
+background: rgba(29, 163, 238, 0.5);
+border: 1px solid #1DA3EE;
+color:white;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnImgGen">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>740</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 0.5px solid rgba(29, 163, 238, 0.5);
+color:white;
+background: #1DA3EE;</string>
+        </property>
+        <property name="text">
+         <string>IMG_GEN</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>670</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 97px;
+height: 32px;
+padding: 0px;
+border-radius: 4px;
+background: rgba(29, 163, 238, 0.5);
+border: 1px solid #1DA3EE;
+color:white;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>670</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 97px;
+height: 32px;
+padding: 0px;
+border-radius: 4px;
+background: rgba(29, 163, 238, 0.5);
+border: 1px solid #1DA3EE;
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Output:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnOutput">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>670</y>
+          <width>21</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 0.5px solid rgba(29, 163, 238, 0.5);
+color:white;
+background: #1DA3EE;</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
